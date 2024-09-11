@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <title>Ordem de Serviços</title>
+  </head>
+  <body>
+    <form>
+      <label for="">Clientes</label>
+      <select name="nome-empresa" id="nome-empresa">
+        <option value="" disabled selected>Selecione uma empresa</option>
+        <option value="technova">TechNova Solutions</option>
+        <option value="inova">InovaTech Ltda.</option>
+        <option value="dyna">DynaCorp</option>
+        <option value="quantum">Quantum Innovations</option>
+        <option value="nextgen">NextGen Enterprises</option>
+        <option value="strategix">Strategix Group</option>
+        <option value="zenith">Zenith Technologies</option>
+        <option value="pinnacle">Pinnacle Services</option>
+        <option value="vertex">Vertex Solutions</option>
+        <option value="horizon">Horizon Ventures</option>
+      </select>
+
+      <label for="">Serviços</label>
+
+      <select
+        name="tipo-servico"
+        aria-placeholder="Tipos de Serviçcos"
+        id="tipo-servico"
+      >
+        <option value="" disabled selected>Selecione um tipo de serviço</option>
+        <option value="consultoria">Consultoria</option>
+        <option value="desenvolvimento-web">Desenvolvimento Web</option>
+        <option value="marketing-digital">Marketing Digital</option>
+        <option value="design-grafico">Design Gráfico</option>
+        <option value="suporte-tecnico">Suporte Técnico</option>
+        <option value="treinamento">Treinamento</option>
+        <option value="auditoria">Auditoria</option>
+        <option value="gestao-projetos">Gestão de Projetos</option>
+        <option value="redacao">Redação</option>
+        <option value="consultoria-financeira">Consultoria Financeira</option>
+      </select>
+
+      <label for="">Data de inicio do Seviço</label>
+      <input type="date" required />
+
+      <label for="">Data de Termino</label>
+      <input type="date" required />
+
+      <label for="">Status</label>
+      <div class="status-checkboxes">
+        <label>
+            <input type="checkbox" id="status-ativo" name="status" value="ativo">
+            Ativo
+        </label>
+        <label>
+            <input type="checkbox" id="status-inativo" name="status" value="inativo">
+            Inativo
+        </label>
+    </div>
+
+    <button>Enviar</button>
+    </form>
+  </body>
+</html>

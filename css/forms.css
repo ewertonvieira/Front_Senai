@@ -1,0 +1,127 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    min-width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.12),
+                0 10px 20px rgba(0, 0, 0, 0.2), 
+                0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    margin: 2%;
+    display: block;
+}
+
+form input, textarea, select {
+    height: 40px;
+    width: calc(100% - 10px);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    padding: 0 12px;
+    font-size: 16px;
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    margin: auto;
+}
+
+textarea {
+    height: 130px;
+}
+
+button {
+    height: 40px;
+    width: calc(100% - 10px);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #fff;
+    background-color: #028fa1;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #027a91;
+}
+
+.upload-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-container label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.upload-container input[type="file"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    width: calc(100% - 24px); 
+    box-sizing: border-box; 
+}
+
+/* Estilos para checkboxes */
+form .status-checkboxes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+form .status-checkboxes label {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+form .status-checkboxes input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #028fa1; 
+}
+
+form .status-checkboxes input[type="checkbox"]:checked::before {
+    content: "✔";
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <title>Serviços</title>
+  </head>
+  <body>
+    <form action="">
+      <h3>Tipo de Serviços</h3>
+      <label for="">Tipos</label>
+      <select
+        name="tipo-servico"
+        aria-placeholder="Tipos de Serviçcos"
+        id="tipo-servico"
+      >
+        <option value="" disabled selected>Selecione um tipo de serviço</option>
+        <option value="consultoria">Consultoria</option>
+        <option value="desenvolvimento-web">Desenvolvimento Web</option>
+        <option value="marketing-digital">Marketing Digital</option>
+        <option value="design-grafico">Design Gráfico</option>
+        <option value="suporte-tecnico">Suporte Técnico</option>
+        <option value="treinamento">Treinamento</option>
+        <option value="auditoria">Auditoria</option>
+        <option value="gestao-projetos">Gestão de Projetos</option>
+        <option value="redacao">Redação</option>
+        <option value="consultoria-financeira">Consultoria Financeira</option>
+      </select>
+
+      <label for="">Valor</label>
+      <input type="text" placeholder="0,0 R$" required>
+
+      <label for="">Empresa</label>
+      <select name="nome-empresa" id="nome-empresa">
+        <option value="" disabled selected>Selecione uma empresa</option>
+        <option value="technova">TechNova Solutions</option>
+        <option value="inova">InovaTech Ltda.</option>
+        <option value="dyna">DynaCorp</option>
+        <option value="quantum">Quantum Innovations</option>
+        <option value="nextgen">NextGen Enterprises</option>
+        <option value="strategix">Strategix Group</option>
+        <option value="zenith">Zenith Technologies</option>
+        <option value="pinnacle">Pinnacle Services</option>
+        <option value="vertex">Vertex Solutions</option>
+        <option value="horizon">Horizon Ventures</option>
+    </select>
+    
+    <label for="">Categorias</label>
+    <select name="nome-empresa" id="nome-empresa">
+        <option value="" disabled selected>Categoria</option>
+        <option value="technova">A</option>
+        <option value="inova">B</option>
+    </select>
+    
+    <button>Enviar</button>
+    </form>
+  </body>
+</html>
